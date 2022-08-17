@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
 import { Hero }    from './hero';
+import {HeroService} from "./hero.service";
 
 @Component({
   selector: 'hero-form',
-  templateUrl: './hero-form.component.html'
+  templateUrl: './hero-form.component.html',
+  providers:[HeroService]
 })
 export class HeroFormComponent {
 
